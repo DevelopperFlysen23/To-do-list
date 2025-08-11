@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="C:\Users\SANI\OneDrive\Bureau\SI\To-Do-website-main\To-Do-website-main\style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>My To-Do List</h1>
+
+      <div class="controls">
+        <form id="tasks-filter" class="filter">
+          <label><input type="radio" name="task filter" value="both" checked> All</label>
+          <label><input type="radio" name="task filter" value="notCheckedTasks"> Active</label>
+          <label><input type="radio" name="task filter" value="checkedTasks"> Done</label>
+        </form>
+
+        <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <main>
+      <ul id="tasks-list" aria-live="polite"></ul>
+      <p id="task-count" class="task-count">0 tasks remaining</p>
+    </main>
+
+    <footer class="footer">
+      <form id="add-task" class="add-form">
+        <input type="text" placeholder="Add a new task..." aria-label="New task" />
+        <button class="btn primary">Add</button>
+      </form>
+
+      <div class="bulk-actions">
+        <button id="complete-all" class="btn ghost">✅ Complete All</button>
+        <button id="clear-completed" class="btn danger">🗑 Clear Completed</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="C:\Users\SANI\OneDrive\Bureau\SI\To-Do-website-main\To-Do-website-main\script.js"></script>
+</body>
+</html>
